@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="XmlJsonParser">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/XmlJsonParser.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/XmlJsonParser.jar!/" />
+    </SOURCES>
+  </library>
+</component>

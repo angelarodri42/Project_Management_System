@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="600.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AddProjectController">
+   <center>
+      <TabPane fx:id="mainTabPane" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab fx:id="allProjectsTab" text="All Projects">
+            <content>
+              <AnchorPane prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <GridPane prefHeight="25.0" prefWidth="600.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <TextField fx:id="searchTextField" alignment="BOTTOM_LEFT" prefHeight="25.0" prefWidth="210.0" GridPane.columnIndex="1" />
+                                    <Button fx:id="searchButton" alignment="TOP_CENTER" contentDisplay="RIGHT" mnemonicParsing="false" text="Search" GridPane.columnIndex="2">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <GridPane.margin>
+                                          <Insets left="5.0" />
+                                       </GridPane.margin>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </GridPane>
+                              <BorderPane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <center>
+                                    <TableView fx:id="projectsTableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                                 </center>
+                              </BorderPane>
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="addProjectTab" text="Add a Project">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="377.0" prefWidth="659.0">
+                     <children>
+                        <TabPane fx:id="projectSpecificDataTabPane" layoutX="15.0" layoutY="254.0" prefHeight="288.0" prefWidth="800.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="254.0">
+                           <tabs>
+                              <Tab fx:id="residentialTab" closable="false" text="Residential">
+                                 <content>
+                                    <AnchorPane>
+                                       <children>
+                                          <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="190.0" prefWidth="780.0">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="165.0" minWidth="165.0" prefWidth="165.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="255.0" minWidth="150.0" prefWidth="229.0" />
+                                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="168.5" minWidth="25.0" prefWidth="89.5" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="475.0" minWidth="10.0" prefWidth="281.5" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <Label fx:id="numberOfKitchensLabel" text="Number of kitchens:" GridPane.rowIndex="1" />
+                                                <Label fx:id="numberOfBathroomsLabel" text="Number of bathrooms:" GridPane.rowIndex="2" />
+                                                <Label fx:id="otherRoomsLabel" text="Other rooms with plumbing:" GridPane.rowIndex="3" />
+                                                <Label fx:id="typeOfAProjectLabel" text="Type of a project:" GridPane.rowIndex="4" />
+                                                <Label fx:id="sizeOfBuildingLabel" text="Size of a building:" />
+                                                <HBox alignment="CENTER_LEFT" spacing="5.0" GridPane.columnIndex="1">
+                                                   <children>
+                                                      <TextField fx:id="residentialSizeOfBuildingField" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="150.0" />
+                                                      <Label fx:id="m21" text="m2" />
+                                                   </children>
+                                                </HBox>
+                                                <TextField fx:id="residentialNumberOfKitchensField" maxWidth="-Infinity" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <TextField fx:id="residentialNumberOfBathroomsField" maxWidth="-Infinity" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                <TextField fx:id="residentialNumberOfRoomsWithPlumbingField" maxWidth="-Infinity" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                <ChoiceBox fx:id="residentialIsProjectNewBuildChoiceBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                             </children>
+                                             <padding>
+                                                <Insets left="15.0" top="15.0" />
+                                             </padding>
+                                          </GridPane>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab fx:id="commercialTab" closable="false" text="Commercial ">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="120.0" prefWidth="780.0">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="165.0" minWidth="165.0" prefWidth="165.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="230.0" minWidth="230.0" prefWidth="230.0" />
+                                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="25.0" minWidth="25.0" prefWidth="25.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="475.0" minWidth="10.0" prefWidth="316.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <Label fx:id="numberOfFloorsLabel" text="Number of floors:" GridPane.rowIndex="1" />
+                                                <Label fx:id="sizeOfBuildingLabel" text="Size of a building:" />
+                                                <HBox alignment="CENTER_LEFT" spacing="5.0" GridPane.columnIndex="1">
+                                                   <children>
+                                                      <TextField fx:id="commercialSizeOfBuildingField" maxWidth="-Infinity" prefWidth="150.0" />
+                                                      <Label fx:id="m2" text="m2" />
+                                                   </children>
+                                                </HBox>
+                                                <Label fx:id="useOfBuildingLabel" text="Intended use of a building:" GridPane.rowIndex="2" />
+                                                <TextField fx:id="commercialNumberOfFloorsField" maxWidth="-Infinity" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <TextField fx:id="commercialIntendedUseOfTheBuildingField" maxWidth="-Infinity" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                             </children>
+                                             <padding>
+                                                <Insets left="15.0" top="15.0" />
+                                             </padding>
+                                          </GridPane>
+                                       </children></AnchorPane>
+                                </content>
+                              </Tab>
+                              <Tab fx:id="industrialTab" closable="false" text="Industrial">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="301.0" prefWidth="821.0">
+                                       <children>
+                                          <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="120.0" prefWidth="800.0">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="165.0" minWidth="165.0" prefWidth="165.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="230.0" minWidth="230.0" prefWidth="230.0" />
+                                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="25.0" minWidth="25.0" prefWidth="25.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="475.0" minWidth="10.0" prefWidth="316.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <Label fx:id="sizeOfFacilityLabel" text="Size of a facility:" />
+                                                <HBox alignment="CENTER_LEFT" spacing="5.0" GridPane.columnIndex="1">
+                                                   <children>
+                                                      <TextField fx:id="industrialSizeOfBuildingField" maxWidth="-Infinity" prefWidth="150.0" />
+                                                      <Label fx:id="m22" text="m2" />
+                                                   </children>
+                                                </HBox>
+                                                <Label fx:id="useOfBuildingLabel1" text="Intended use of a building:" GridPane.rowIndex="1" />
+                                                <TextField fx:id="industrialIntendedUseOfTheBuildingField" maxWidth="-Infinity" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                             </children>
+                                             <padding>
+                                                <Insets left="15.0" top="15.0" />
+                                             </padding>
+                                          </GridPane>
+                                       </children></AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab fx:id="roadConstructionTab" closable="false" text="Road Construction">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <GridPane prefHeight="150.0" prefWidth="800.0">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.0" minWidth="220.0" prefWidth="220.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" />
+                                                <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="25.0" minWidth="25.0" prefWidth="25.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="475.0" minWidth="10.0" prefWidth="393.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <Label fx:id="numberOfFloorsLabel11" text="Bridges/tunels to be constructed:" GridPane.rowIndex="2" />
+                                                <Label fx:id="roadWidthLabel" text="Width of the road:" GridPane.rowIndex="1" />
+                                                <TextField fx:id="roadConstructionRoadWidthField" prefHeight="25.0" prefWidth="147.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <Label fx:id="m221" prefHeight="17.0" prefWidth="11.0" text="m" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                <Label fx:id="useOfBuildingLabel11" text="Enviromental/geographical challenges:" GridPane.rowIndex="3" />
+                                                <Label fx:id="roadLengthLabel" text="Length of the road:" />
+                                                <TextField fx:id="roadConstructionRoadLengthField" prefHeight="25.0" prefWidth="147.0" GridPane.columnIndex="1" />
+                                                <Label text="m" GridPane.columnIndex="2" />
+                                                <TextField fx:id="roadConstructionNumberOfBridges" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                <CheckBox fx:id="roadConstructionGeoChallenges1" mnemonicParsing="false" text="Steep hills" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                <CheckBox fx:id="roadConstructionGeoChallenges2" mnemonicParsing="false" text="Wetlands" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                <CheckBox fx:id="roadConstructionGeoChallenges3" mnemonicParsing="false" text="Sensitive Habitants" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                             </children>
+                                             <padding>
+                                                <Insets left="15.0" top="15.0" />
+                                             </padding>
+                                          </GridPane>
+                                       </children></AnchorPane>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                        <GridPane prefHeight="200.0" prefWidth="799.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.0" minWidth="10.0" prefWidth="185.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="477.0" minWidth="10.0" prefWidth="306.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="475.0" minWidth="10.0" prefWidth="23.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="475.0" minWidth="10.0" prefWidth="260.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" valignment="CENTER" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="37.0" minHeight="35.0" prefHeight="37.0" valignment="CENTER" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="35.0" minHeight="33.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="35.0" minHeight="35.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="Project title:" />
+                              <TextField id="projectTitle_textField" fx:id="projectTitleField" prefHeight="25.0" prefWidth="210.0" GridPane.columnIndex="1">
+                                 <cursor>
+                                    <Cursor fx:constant="TEXT" />
+                                 </cursor>
+                              </TextField>
+                              <Label text="Category:" GridPane.rowIndex="1" />
+                              <ChoiceBox id="category_choice_box" fx:id="projectTypeChoiceBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ChoiceBox>
+                              <Label fx:id="budgetLabel1" text="Budget:" GridPane.rowIndex="2" />
+                              <HBox alignment="CENTER_LEFT" spacing="5.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <children>
+                                    <TextField id="budget_textField" fx:id="budgetField" maxWidth="-Infinity" prefHeight="25.0" prefWidth="150.0">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor>
+                                    </TextField>
+                                    <Label fx:id="dolar1" prefHeight="17.0" prefWidth="12.0" text="\$">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <Label fx:id="timelineLabel1" text="Timeline:" GridPane.rowIndex="3" />
+                              <TextField fx:id="timelineField" maxWidth="-Infinity" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <Label text="Man hours used:" GridPane.rowIndex="4" />
+                              <TextField fx:id="manHoursUsedField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <Label text="Material expenses:" GridPane.rowIndex="5" />
+                              <TextField fx:id="materialExpensesField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <CheckBox fx:id="isOngoingCheckBox" mnemonicParsing="false" text="Is ongoing" GridPane.columnIndex="3" />
+                           </children>
+                           <padding>
+                              <Insets left="15.0" top="15.0" />
+                           </padding>
+                        </GridPane>
+                        <GridPane alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="770.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="30.0">
+                           <columnConstraints>
+                              <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="770.0" prefWidth="770.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="30.0" prefHeight="30.0" />
+                           </rowConstraints>
+                           <children>
+                              <HBox alignment="TOP_RIGHT">
+                                 <GridPane.margin>
+                                    <Insets />
+                                 </GridPane.margin>
+                                 <children>
+                                    <Button fx:id="cancelButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Cancel">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <HBox.margin>
+                                          <Insets right="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="submitButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" text="Submit">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </GridPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+   <top>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" minWidth="300.0" prefWidth="300.0" />
+            <ColumnConstraints hgrow="ALWAYS" minWidth="100.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="304.0" text="PROJECT MANAGEMENT SYSTEM" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets left="15.0" right="15.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </top>
+</BorderPane>

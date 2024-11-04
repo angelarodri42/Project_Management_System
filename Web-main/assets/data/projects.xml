@@ -1,0 +1,465 @@
+
+<ProjectList>
+  <projects>
+    <intendedUseOfTheBuilding>Office</intendedUseOfTheBuilding>
+    <numberOfFloors>1</numberOfFloors>
+    <size>3</size>
+    <projectType>Commercial</projectType>
+    <timeline>12</timeline>
+    <materialExpenses>0</materialExpenses>
+    <manHoursUsed>0</manHoursUsed>
+    <budget>500000</budget>
+    <customer>
+      <phoneNumber>Phone Number 1</phoneNumber>
+      <name>Customer 1</name>
+      <email>Email 1</email>
+    </customer>
+    <status>
+      <isOngoing>false</isOngoing>
+    </status>
+  </projects>
+  <projects>
+    <size>3</size>
+    <widthOfTheRoad>1</widthOfTheRoad>
+    <numberOfBridges>1</numberOfBridges>
+    <projectType>RoadConstruction</projectType>
+    <timeline>12</timeline>
+    <lengthOfTheRoad>1</lengthOfTheRoad>
+    <materialExpenses>0</materialExpenses>
+    <manHoursUsed>0</manHoursUsed>
+    <budget>1000000</budget>
+    <customer>
+      <phoneNumber>Phone Number 2</phoneNumber>
+      <name>Customer 2</name>
+      <email>Email 2</email>
+    </customer>
+    <status>
+      <isOngoing>true</isOngoing>
+    </status>
+  </projects>
+  <projects>
+    <size>3</size>
+    <projectType>Industrial</projectType>
+    <timeline>12</timeline>
+    <materialExpenses>0</materialExpenses>
+    <manHoursUsed>0</manHoursUsed>
+    <type>Manufacturing plant</type>
+    <budget>1000000</budget>
+    <customer>
+      <phoneNumber>Phone Number 3</phoneNumber>
+      <name>Customer 3</name>
+      <email>Email 3</email>
+    </customer>
+    <status>
+      <isOngoing>false</isOngoing>
+    </status>
+  </projects>
+  <projects>
+    <numberOfRoomsWithPlumbing>1</numberOfRoomsWithPlumbing>
+    <size>3</size>
+    <projectType>Residential</projectType>
+    <isProjectNewBuild>true</isProjectNewBuild>
+    <timeline>12</timeline>
+    <numberOfKitchens>1</numberOfKitchens>
+    <materialExpenses>0</materialExpenses>
+    <manHoursUsed>0</manHoursUsed>
+    <numberOfBathrooms>1</numberOfBathrooms>
+    <budget>100000</budget>
+    <customer>
+      <phoneNumber>Phone Number 4</phoneNumber>
+      <name>Customer 4</name>
+      <email>Email 4</email>
+    </customer>
+    <status>
+      <isOngoing>false</isOngoing>
+    </status>
+  </projects>
+  <projects>
+    <intendedUseOfTheBuilding>Office</intendedUseOfTheBuilding>
+    <numberOfFloors>1</numberOfFloors>
+    <size>3</size>
+    <projectType>Commercial</projectType>
+    <timeline>12</timeline>
+    <materialExpenses>0</materialExpenses>
+    <manHoursUsed>0</manHoursUsed>
+    <budget>500000</budget>
+    <customer>
+      <phoneNumber>Phone Number 5</phoneNumber>
+      <name>Customer 5</name>
+      <email>Email 5</email>
+    </customer>
+    <status>
+      <isOngoing>true</isOngoing>
+    </status>
+  </projects>
+  <projects>
+    <size>3</size>
+    <widthOfTheRoad>1</widthOfTheRoad>
+    <numberOfBridges>1</numberOfBridges>
+    <projectType>RoadConstruction</projectType>
+    <timeline>12</timeline>
+    <lengthOfTheRoad>1</lengthOfTheRoad>
+    <materialExpenses>0</materialExpenses>
+    <manHoursUsed>0</manHoursUsed>
+    <budget>1000000</budget>
+    <customer>
+      <phoneNumber>Phone Number 6</phoneNumber>
+      <name>Customer 6</name>
+      <email>Email 6</email>
+    </customer>
+    <status>
+      <isOngoing>true</isOngoing>
+    </status>
+  </projects>
+  <projects>
+    <size>3</size>
+    <projectType>Industrial</projectType>
+    <timeline>12</timeline>
+    <materialExpenses>0</materialExpenses>
+    <manHoursUsed>0</manHoursUsed>
+    <type>Manufacturing plant</type>
+    <budget>1000000</budget>
+    <customer>
+      <phoneNumber>Phone Number 7</phoneNumber>
+      <name>Customer 7</name>
+      <email>Email 7</email>
+    </customer>
+    <status>
+      <isOngoing>false</isOngoing>
+    </status>
+  </projects>
+  <projects>
+    <numberOfRoomsWithPlumbing>1</numberOfRoomsWithPlumbing>
+    <size>3</size>
+    <projectType>Residential</projectType>
+    <isProjectNewBuild>true</isProjectNewBuild>
+    <timeline>12</timeline>
+    <numberOfKitchens>1</numberOfKitchens>
+    <materialExpenses>0</materialExpenses>
+    <manHoursUsed>0</manHoursUsed>
+    <numberOfBathrooms>1</numberOfBathrooms>
+    <budget>100000</budget>
+    <customer>
+      <phoneNumber>Phone Number 8</phoneNumber>
+      <name>Customer 8</name>
+      <email>Email 8</email>
+    </customer>
+    <status>
+      <isOngoing>false</isOngoing>
+    </status>
+  </projects>
+  <projects>
+    <intendedUseOfTheBuilding>Office</intendedUseOfTheBuilding>
+    <numberOfFloors>1</numberOfFloors>
+    <size>3</size>
+    <projectType>Commercial</projectType>
+    <timeline>12</timeline>
+    <materialExpenses>0</materialExpenses>
+    <manHoursUsed>0</manHoursUsed>
+    <budget>500000</budget>
+    <customer>
+      <phoneNumber>Phone Number 9</phoneNumber>
+      <name>Customer 9</name>
+      <email>Email 9</email>
+    </customer>
+    <status>
+      <isOngoing>true</isOngoing>
+    </status>
+  </projects>
+  <projects>
+    <size>3</size>
+    <widthOfTheRoad>1</widthOfTheRoad>
+    <numberOfBridges>1</numberOfBridges>
+    <projectType>RoadConstruction</projectType>
+    <timeline>12</timeline>
+    <lengthOfTheRoad>1</lengthOfTheRoad>
+    <materialExpenses>0</materialExpenses>
+    <manHoursUsed>0</manHoursUsed>
+    <budget>1000000</budget>
+    <customer>
+      <phoneNumber>Phone Number 10</phoneNumber>
+      <name>Customer 10</name>
+      <email>Email 10</email>
+    </customer>
+    <status>
+      <isOngoing>false</isOngoing>
+    </status>
+  </projects>
+  <projects>
+    <size>3</size>
+    <projectType>Industrial</projectType>
+    <timeline>12</timeline>
+    <materialExpenses>0</materialExpenses>
+    <manHoursUsed>0</manHoursUsed>
+    <type>Manufacturing plant</type>
+    <budget>1000000</budget>
+    <customer>
+      <phoneNumber>Phone Number 11</phoneNumber>
+      <name>Customer 11</name>
+      <email>Email 11</email>
+    </customer>
+    <status>
+      <isOngoing>false</isOngoing>
+    </status>
+  </projects>
+  <projects>
+    <numberOfRoomsWithPlumbing>1</numberOfRoomsWithPlumbing>
+    <size>3</size>
+    <projectType>Residential</projectType>
+    <isProjectNewBuild>true</isProjectNewBuild>
+    <timeline>12</timeline>
+    <numberOfKitchens>1</numberOfKitchens>
+    <materialExpenses>0</materialExpenses>
+    <manHoursUsed>0</manHoursUsed>
+    <numberOfBathrooms>1</numberOfBathrooms>
+    <budget>100000</budget>
+    <customer>
+      <phoneNumber>Phone Number 12</phoneNumber>
+      <name>Customer 12</name>
+      <email>Email 12</email>
+    </customer>
+    <status>
+      <isOngoing>true</isOngoing>
+    </status>
+  </projects>
+  <projects>
+    <intendedUseOfTheBuilding>Office</intendedUseOfTheBuilding>
+    <numberOfFloors>1</numberOfFloors>
+    <size>3</size>
+    <projectType>Commercial</projectType>
+    <timeline>12</timeline>
+    <materialExpenses>0</materialExpenses>
+    <manHoursUsed>0</manHoursUsed>
+    <budget>500000</budget>
+    <customer>
+      <phoneNumber>Phone Number 13</phoneNumber>
+      <name>Customer 13</name>
+      <email>Email 13</email>
+    </customer>
+    <status>
+      <isOngoing>false</isOngoing>
+    </status>
+  </projects>
+  <projects>
+    <size>3</size>
+    <widthOfTheRoad>1</widthOfTheRoad>
+    <numberOfBridges>1</numberOfBridges>
+    <projectType>RoadConstruction</projectType>
+    <timeline>12</timeline>
+    <lengthOfTheRoad>1</lengthOfTheRoad>
+    <materialExpenses>0</materialExpenses>
+    <manHoursUsed>0</manHoursUsed>
+    <budget>1000000</budget>
+    <customer>
+      <phoneNumber>Phone Number 14</phoneNumber>
+      <name>Customer 14</name>
+      <email>Email 14</email>
+    </customer>
+    <status>
+      <isOngoing>false</isOngoing>
+    </status>
+  </projects>
+  <projects>
+    <size>3</size>
+    <projectType>Industrial</projectType>
+    <timeline>12</timeline>
+    <materialExpenses>0</materialExpenses>
+    <manHoursUsed>0</manHoursUsed>
+    <type>Manufacturing plant</type>
+    <budget>1000000</budget>
+    <customer>
+      <phoneNumber>Phone Number 15</phoneNumber>
+      <name>Customer 15</name>
+      <email>Email 15</email>
+    </customer>
+    <status>
+      <isOngoing>false</isOngoing>
+    </status>
+  </projects>
+  <projects>
+    <numberOfRoomsWithPlumbing>1</numberOfRoomsWithPlumbing>
+    <size>3</size>
+    <projectType>Residential</projectType>
+    <isProjectNewBuild>true</isProjectNewBuild>
+    <timeline>12</timeline>
+    <numberOfKitchens>1</numberOfKitchens>
+    <materialExpenses>0</materialExpenses>
+    <manHoursUsed>0</manHoursUsed>
+    <numberOfBathrooms>1</numberOfBathrooms>
+    <budget>100000</budget>
+    <customer>
+      <phoneNumber>Phone Number 16</phoneNumber>
+      <name>Customer 16</name>
+      <email>Email 16</email>
+    </customer>
+    <status>
+      <isOngoing>false</isOngoing>
+    </status>
+  </projects>
+  <projects>
+    <intendedUseOfTheBuilding>Office</intendedUseOfTheBuilding>
+    <numberOfFloors>1</numberOfFloors>
+    <size>3</size>
+    <projectType>Commercial</projectType>
+    <timeline>12</timeline>
+    <materialExpenses>0</materialExpenses>
+    <manHoursUsed>0</manHoursUsed>
+    <budget>500000</budget>
+    <customer>
+      <phoneNumber>Phone Number 17</phoneNumber>
+      <name>Customer 17</name>
+      <email>Email 17</email>
+    </customer>
+    <status>
+      <isOngoing>false</isOngoing>
+    </status>
+  </projects>
+  <projects>
+    <size>3</size>
+    <widthOfTheRoad>1</widthOfTheRoad>
+    <numberOfBridges>1</numberOfBridges>
+    <projectType>RoadConstruction</projectType>
+    <timeline>12</timeline>
+    <lengthOfTheRoad>1</lengthOfTheRoad>
+    <materialExpenses>0</materialExpenses>
+    <manHoursUsed>0</manHoursUsed>
+    <budget>1000000</budget>
+    <customer>
+      <phoneNumber>Phone Number 18</phoneNumber>
+      <name>Customer 18</name>
+      <email>Email 18</email>
+    </customer>
+    <status>
+      <isOngoing>false</isOngoing>
+    </status>
+  </projects>
+  <projects>
+    <size>3</size>
+    <projectType>Industrial</projectType>
+    <timeline>12</timeline>
+    <materialExpenses>0</materialExpenses>
+    <manHoursUsed>0</manHoursUsed>
+    <type>Manufacturing plant</type>
+    <budget>1000000</budget>
+    <customer>
+      <phoneNumber>Phone Number 19</phoneNumber>
+      <name>Customer 19</name>
+      <email>Email 19</email>
+    </customer>
+    <status>
+      <isOngoing>false</isOngoing>
+    </status>
+  </projects>
+  <projects>
+    <numberOfRoomsWithPlumbing>1</numberOfRoomsWithPlumbing>
+    <size>3</size>
+    <projectType>Residential</projectType>
+    <isProjectNewBuild>true</isProjectNewBuild>
+    <timeline>12</timeline>
+    <numberOfKitchens>1</numberOfKitchens>
+    <materialExpenses>0</materialExpenses>
+    <manHoursUsed>0</manHoursUsed>
+    <numberOfBathrooms>1</numberOfBathrooms>
+    <budget>100000</budget>
+    <customer>
+      <phoneNumber>Phone Number 20</phoneNumber>
+      <name>Customer 20</name>
+      <email>Email 20</email>
+    </customer>
+    <status>
+      <isOngoing>false</isOngoing>
+    </status>
+  </projects>
+  <projects>
+    <intendedUseOfTheBuilding>Office</intendedUseOfTheBuilding>
+    <numberOfFloors>1</numberOfFloors>
+    <size>3</size>
+    <projectType>Commercial</projectType>
+    <timeline>12</timeline>
+    <materialExpenses>0</materialExpenses>
+    <manHoursUsed>0</manHoursUsed>
+    <budget>500000</budget>
+    <customer>
+      <phoneNumber>Phone Number 21</phoneNumber>
+      <name>Customer 21</name>
+      <email>Email 21</email>
+    </customer>
+    <status>
+      <isOngoing>false</isOngoing>
+    </status>
+  </projects>
+  <projects>
+    <size>3</size>
+    <widthOfTheRoad>1</widthOfTheRoad>
+    <numberOfBridges>1</numberOfBridges>
+    <projectType>RoadConstruction</projectType>
+    <timeline>12</timeline>
+    <lengthOfTheRoad>1</lengthOfTheRoad>
+    <materialExpenses>0</materialExpenses>
+    <manHoursUsed>0</manHoursUsed>
+    <budget>1000000</budget>
+    <customer>
+      <phoneNumber>Phone Number 22</phoneNumber>
+      <name>Customer 22</name>
+      <email>Email 22</email>
+    </customer>
+    <status>
+      <isOngoing>false</isOngoing>
+    </status>
+  </projects>
+  <projects>
+    <size>3</size>
+    <projectType>Industrial</projectType>
+    <timeline>12</timeline>
+    <materialExpenses>0</materialExpenses>
+    <manHoursUsed>0</manHoursUsed>
+    <type>Manufacturing plant</type>
+    <budget>1000000</budget>
+    <customer>
+      <phoneNumber>Phone Number 23</phoneNumber>
+      <name>Customer 23</name>
+      <email>Email 23</email>
+    </customer>
+    <status>
+      <isOngoing>false</isOngoing>
+    </status>
+  </projects>
+  <projects>
+    <numberOfRoomsWithPlumbing>1</numberOfRoomsWithPlumbing>
+    <size>3</size>
+    <projectType>Residential</projectType>
+    <isProjectNewBuild>true</isProjectNewBuild>
+    <timeline>12</timeline>
+    <numberOfKitchens>1</numberOfKitchens>
+    <materialExpenses>0</materialExpenses>
+    <manHoursUsed>0</manHoursUsed>
+    <numberOfBathrooms>1</numberOfBathrooms>
+    <budget>100000</budget>
+    <customer>
+      <phoneNumber>Phone Number 24</phoneNumber>
+      <name>Customer 24</name>
+      <email>Email 24</email>
+    </customer>
+    <status>
+      <isOngoing>false</isOngoing>
+    </status>
+  </projects>
+  <projects>
+    <intendedUseOfTheBuilding>Office</intendedUseOfTheBuilding>
+    <numberOfFloors>1</numberOfFloors>
+    <size>3</size>
+    <projectType>Commercial</projectType>
+    <timeline>12</timeline>
+    <materialExpenses>0</materialExpenses>
+    <manHoursUsed>0</manHoursUsed>
+    <budget>500000</budget>
+    <customer>
+      <phoneNumber>Phone Number 25</phoneNumber>
+      <name>Customer 25</name>
+      <email>Email 25</email>
+    </customer>
+    <status>
+      <isOngoing>false</isOngoing>
+    </status>
+  </projects>
+</ProjectList>

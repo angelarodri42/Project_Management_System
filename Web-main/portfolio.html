@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+    <!-- Nav bar -->
+    <div class="background">
+        <img src="assets/images/portfolio_photo_bg.jpg"
+            style="width: 100%; height: 62vh; object-fit: cover; object-position: 50% 48%;">
+    </div>
+    <div id="mainNavigation">
+        <nav role="navigation">
+            <div class="py-3 text-center border-bottom">
+                <img src="assets/images/11.png" style="height: 15vh; width: auto;" alt="logo" class="invert">
+            </div>
+        </nav>
+        <div class="navbar-expand-md">
+            <div class="navbar-dark text-center my-2">
+                <button class="navbar-toggler w-75" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span> <span class="align-middle">Menu</span>
+                </button>
+            </div>
+            <div class="text-center mt-3 collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="status.html">Status</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br> <!-- Do this with margin instead -->
+
+    <!-- Short info about our projects -->
+    <div id="our-projects" class="container pt-5">
+        <div>
+            <h1>Few information about our work...</h1>
+            <br>
+            <p>Welcome to El Futuro, where we transform your construction dreams into reality.<br><br>
+                Our experienced team is dedicated to delivering top-notch, customized solutions for all your
+                building needs. From residential renovations to commercial constructions, we take pride in our
+                commitment to quality, efficiency, and exceptional craftsmanship.<br><br>
+                Discover how we can make your vision a concrete reality with your company. With years of expertise in
+                the construction industry, our professionals bring
+                unparalleled knowledge and skill to every project.<br><br>
+                At El Futuro, we understand the importance of attention to detail, and we work tirelessly to ensure
+                every aspect of your project is executed to perfection.
+                Our dedication to meeting deadlines and budgets means you can trust us to deliver your construction
+                projects on time and within your financial parameters.<br><br>
+                We believe that effective communication with our clients is the key to a successful collaboration,
+                ensuring your ideas are incorporated into every phase of the project.<br><br>
+                Our portfolio showcases a wide range of successful projects, from elegant home renovations to
+                cutting-edge commercial spaces.
+                Quality and safety are at the forefront of everything we do.<br><br>
+                We adhere to the highest industry standards to provide you with a secure and stunning end result.
+                Contact us today to discuss your upcoming project, and let's embark on this journey together to build a
+                better future.</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br> <!-- Do this with margin instead -->
+
+    <!-- Our projects -->
+    
+    <section id="portfolio" class="portfolio section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Our Projects</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="projectList">
+
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <br> <!-- Do this with margin instead -->
+
+    <!-- Carousel -->
+    <div> <!-- Also add a dark trnasparent layer on each of the carousel's photos -->
+        <div id="demo" class="carousel slide pt-5" data-bs-ride="carousel">
+
+            <!-- Indicators-->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-fade">
+                    <div class="carousel-item active">
+                        <div id="portfolio-carousel">
+                            <img src="assets/images/portfolio-building7.jpg" alt="Test1" class="d-block dark-image"
+                                style="width:100%">
+                        </div>
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h3><b>SNEGLEHUSENE</b></h3>
+                                <p><b>Aarhus, Denmark</b></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/portfolio-building8.jpg" alt="Test2" class="d-block" style="width:100%">
+                        <div class="carousel-caption">
+                            <h3><b>National Aquarium Denmark</b></h3>
+                            <p><b>Coppenhagen, Denmark</b></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/portfolio-building9.jpg" alt="Test3" class="d-block" style="width:100%">
+                        <div class="carousel-caption">
+                            <h3><b>Wadden Sea Centre</b></h3>
+                            <p><b>Ribe, Denmark</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <!-- Control arrows -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">El Futuro</h5>
+                    <p>At El Futuro, we don't just construct buildings; we build relationships.<br> Join us on this
+                        journey, and let's build something amazing together!<br>We are Building Dreams, One Brick at a
+                        Time.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-lx-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+                    <p>
+                        <i class="fa-solid fa-home mr-3"></i> 8700 Horsens, Denmark
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-location-dot mr-3"></i> Banegardsgade, 2
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-envelope mr-3"></i> elfuturo@gmail.com
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-phone mr-3"></i> +45 55 26 16 33
+                    </p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-lx-2 mx-auto mt-3">
+                    <img src="assets/images/11.png" style="height: 15vh; width: auto;" alt="logo" class="invert">
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p>Copyright ©2023 All rights reserved by:
+                        <a href="#" style="text-decoration: none ;">
+                            <strong class="text-warning">El Futuro</strong>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/viauniversitycollege/"
+                                    class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                        class="fab fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/VIAuniversity" class="btn-floating btn-sm text-white"
+                                    style="font-size: 23px;"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                        class="fab fa-google-plus"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://dk.linkedin.com/school/via-university-college/"
+                                    class="btn-floating btn-sm text-white" style="font-size: 23px;"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.youtube.com/@VIAuc" class="btn-floating btn-sm text-white"
+                                    style="font-size: 23px;"><i class="fab fa-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/portfolio.js"></script>
+</body>
+
+</html>
